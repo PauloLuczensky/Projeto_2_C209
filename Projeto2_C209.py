@@ -47,7 +47,7 @@ img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # 1º) imagem de entrada; 
 # 2º) cor que queremos usar como a nova cor de fundo.
 # 3º) limite que podemos definir de acordo com nossa imagem fornecida 
-img_Out = segmentor.removeBG(img_rgb, (255,255,255), threshold=0.99)
+img_Out = segmentor.removeBG(img_rgb, (255,255,255), threshold=0.29)
 
 plt.subplot(2, 2, 1)
 plt.imshow(img)
